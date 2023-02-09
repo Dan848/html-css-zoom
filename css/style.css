@@ -18,12 +18,12 @@ body {
 
 /* Header */
 header {
-    height: 50px;
+    height: 5vh;
     background-color: var(--dark-primary);
 }
 
 .change-view {
-    height: 50px;
+    height: 5vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -44,6 +44,7 @@ header {
 main{
     background-color: var(--dark-primary);
     padding-top: 50px;
+    height: 85vh;
 }
 
 .user-box-container {
@@ -71,8 +72,43 @@ main{
 .user-info {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 4px;
     font-size: 0.9rem;
     padding: 5px;
     background-color: rgba(74, 74, 74, 0.5);
 }
+
+.settings-bar {
+    height: 10vh;
+    width: 100vw;
+    background-color: var(--dark-footer);
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0 5px 5px;
+}
+
+.center-text {
+    padding: 5px 7px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.icon-size {
+    font-size: 1.7rem;
+    padding-bottom: 5px;
+}
+
+.flex-setting {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.arrow-up {
+    padding: 0 15px 0 7px;
+}
+
